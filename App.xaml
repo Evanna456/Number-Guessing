@@ -1,0 +1,69 @@
+﻿<Application x:Class="WPF_Number_Guessing_Game.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPF_Number_Guessing_Game"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="LightBlue" SecondaryColor="LightGreen" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="RobotoRegular">./Public/Fonts/roboto/ttf/Roboto-Regular.ttf#Roboto</FontFamily>
+            <FontFamily x:Key="RobotoBold">./Public/Fonts/roboto/ttf/Roboto-Bold.ttf#Roboto</FontFamily>
+            <FontFamily x:Key="RobotoLight">./Public/Fonts/roboto/ttf/Roboto-Light.ttf#Roboto Light</FontFamily>
+            <FontFamily x:Key="RobotoItalic">./Public/Fonts/roboto/ttf/Roboto-Italic.ttf#Roboto</FontFamily>
+            <Style TargetType="Border" x:Key="MyTopBorder">
+                <Setter Property="Background" Value="#cccccc" />
+            </Style>
+            <Style TargetType="DockPanel" x:Key="MyDockPanel">
+                <Setter Property="Background" Value="#FFFFFF" />
+            </Style>
+            <Style TargetType="Border" x:Key="MyBody">
+                <Setter Property="Background" Value="#FFFFFF"/>
+            </Style>
+
+            <Style x:Key="primary-btn" TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignRaisedLightButton}" >
+                <Setter Property="FontSize" Value="20px" />
+                <Setter Property="FontFamily" Value="RobotoBold" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="Background" Value="LightSkyBlue" />
+            </Style>
+
+            <Style x:Key="danger-btn" TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignRaisedLightButton}" >
+                <Setter Property="FontSize" Value="20px" />
+                <Setter Property="FontFamily" Value="RobotoBold" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Background" Value="Red" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="BorderBrush" Value="Red" />
+            </Style>
+
+            <Style x:Key="label" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
+                <Setter Property="FontSize" Value="20px" />
+                <Setter Property="FontFamily" Value="RobotoBold" />
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+
+            <Style x:Key="textblock" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource MaterialDesignTextBlock}" >
+                <Setter Property="FontSize" Value="20px" />
+                <Setter Property="FontFamily" Value="RobotoRegular" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="Height" Value="30px" />
+                <Setter Property="TextWrapping" Value="NoWrap" />
+            </Style>
+
+            <Style x:Key="textbox" TargetType="{x:Type TextBox}" BasedOn="{StaticResource MaterialDesignTextBox}" >
+                <Setter Property="FontSize" Value="20px" />
+                <Setter Property="FontFamily" Value="RobotoNormal" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="Height" Value="30px" />
+                <Setter Property="Width" Value="100px" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ecrM51IpOXImcko+ObQYdbDWDDeSNpeAvMOAXvbKCfot5Vn5AHPkynd+PB3U+3WcvQjhoStdwqKWb+vRKzmqZQ==",
+  "success": true,
+  "projectFilePath": "D:\\My Documents\\Workshop\\WPF\\[1]Projects\\WPF-Number-Guessing-Game\\WPF-Number-Guessing-Game.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Evanna\\.nuget\\packages\\materialdesigncolors\\2.0.3\\materialdesigncolors.2.0.3.nupkg.sha512",
+    "C:\\Users\\Evanna\\.nuget\\packages\\materialdesignthemes\\4.2.1\\materialdesignthemes.4.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
