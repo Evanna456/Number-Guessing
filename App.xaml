@@ -59,7 +59,7 @@
             </Style>
 
             <Style x:Key="textblock" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource MaterialDesignTextBlock}" >
-                <Setter Property="Height" Value="20px" />
+                <Setter Property="Height" Value="auto" />
                 <Setter Property="FontSize" Value="12px" />
                 <Setter Property="FontFamily" Value="RobotoRegular" />
                 <Setter Property="FontWeight" Value="Normal" />
@@ -67,8 +67,8 @@
             </Style>
 
             <Style x:Key="label" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
-                <Setter Property="Height" Value="20px" />
-                <Setter Property="FontSize" Value="12px" />
+                <Setter Property="Height" Value="auto" />
+                <Setter Property="FontSize" Value="17px" />
                 <Setter Property="FontFamily" Value="RobotoRegular" />
                 <Setter Property="FontWeight" Value="Normal" />
             </Style>

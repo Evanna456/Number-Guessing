@@ -1,18 +1,17 @@
 ﻿<Page x:Class="WPF_Number_Guessing_Game.Views.Options"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WPF_Number_Guessing_Game.Views"
-      mc:Ignorable="d" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
       d:DesignHeight="640" d:DesignWidth="640" MinHeight="640px" MinWidth="640px"
-      Title="Options">
+      Title="Options" Loaded="load">
 
     <DockPanel DockPanel.Dock="Top">
         <Border DockPanel.Dock="Top" Style="{StaticResource MyTopBorder}">
             <StackPanel x:Name="Navbar" Orientation="Horizontal">
                 <Button Name="HomeBtn" Click="navigateToHome" Style="{StaticResource nav-btn}">Home</Button>
-                <Button Name="AboutBtn" Style="{StaticResource nav-btn}">About</Button>
+                <Button Name="AboutBtn" Click="showAboutWindow" Style="{StaticResource nav-btn}">About</Button>
             </StackPanel>
         </Border>
 
@@ -20,18 +19,21 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="400px" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="100px" />
-                    <RowDefinition Height="70px" />
-                    <RowDefinition Height="100px" />
+                    <RowDefinition Height="50px" />
+                    <RowDefinition Height="50px" />
+                    <RowDefinition Height="50px" />
                     <RowDefinition Height="100px" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-      
+                <Label Name="MinRange" Width="auto" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource label}" Grid.Column="0" Grid.Row="1">Minimum Range</Label>
+                <TextBox Name="MinRangeTextbox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource textbox}" Grid.Column="1" Grid.Row="1" />
+                <Label Name="MaxRange" Width="auto" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource label}" Grid.Column="0" Grid.Row="2">Maximum Range</Label>
+                <TextBox Name="MaxRangeTextbox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource textbox}" Grid.Column="1" Grid.Row="2" />
+                <Button Name="SaveOptionsBtn" Click="saveBtnClick" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" Style="{StaticResource primary-btn}" >Save</Button>
             </Grid>
         </Border>
     </DockPanel>
