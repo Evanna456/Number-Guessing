@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Number_Guessing_Game.Configs;
 
 namespace WPF_Number_Guessing_Game
 {
@@ -20,9 +21,25 @@ namespace WPF_Number_Guessing_Game
     /// </summary>
     public partial class MainWindow : Window
     {
+        Configs.WindowResponsive myWindowResponsive = new Configs.WindowResponsive();
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void load(object sender, RoutedEventArgs e)
+        {
+            myWindowResponsive.windowConfigCreate();
+            myWindowResponsive.windowConfigLoad();
+
+        }
+
+        private void updateWindowSize(object sender, EventArgs e)
+        {
+
+            myWindowResponsive.windowConfigUpdate();
+
+        }
+
     }
 }

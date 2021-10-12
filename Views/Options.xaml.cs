@@ -1,26 +1,30 @@
 ﻿using System;
-using System.Threading;
+using System.Collections.Generic;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
-using WPF_Number_Guessing_Game.Helpers;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace WPF_Number_Guessing_Game.Views
 {
     /// <summary>
-    /// Interaction logic for Index.xaml
+    /// Interaction logic for Options.xaml
     /// </summary>
-    public partial class Index : Page
+    public partial class Options : Page
     {
-       
-        public Index()
+        public Options()
         {
             InitializeComponent();
         }
 
         public void navigateToHome(object sender, RoutedEventArgs e)
         {
-
 
             NavigationService.Navigate(new Uri("Views/Index.xaml", UriKind.Relative));
 
@@ -29,13 +33,6 @@ namespace WPF_Number_Guessing_Game.Views
         {
 
             NavigationService.Navigate(new Uri("Views/Options.xaml", UriKind.Relative));
-
-        }
-        public void showAboutWindow(object sender, RoutedEventArgs e)
-        {
-
-            AboutWindow myAboutWindow = new AboutWindow();
-            myAboutWindow.Show();
 
         }
     }

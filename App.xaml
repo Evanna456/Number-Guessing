@@ -15,45 +15,70 @@
             <FontFamily x:Key="RobotoBold">./Public/Fonts/roboto/ttf/Roboto-Bold.ttf#Roboto</FontFamily>
             <FontFamily x:Key="RobotoLight">./Public/Fonts/roboto/ttf/Roboto-Light.ttf#Roboto Light</FontFamily>
             <FontFamily x:Key="RobotoItalic">./Public/Fonts/roboto/ttf/Roboto-Italic.ttf#Roboto</FontFamily>
-            <Style TargetType="Border" x:Key="MyTopBorder">
-                <Setter Property="Background" Value="#cccccc" />
-            </Style>
+   
             <Style TargetType="DockPanel" x:Key="MyDockPanel">
                 <Setter Property="Background" Value="#FFFFFF" />
+            </Style>
+            <Style TargetType="Border" x:Key="MyTopBorder">
+                <Setter Property="Height" Value="35px" />
+                <Setter Property="Background" Value="#cccccc" />
             </Style>
             <Style TargetType="Border" x:Key="MyBody">
                 <Setter Property="Background" Value="#FFFFFF"/>
             </Style>
 
-            <Style x:Key="primary-btn" TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignRaisedLightButton}" >
-                <Setter Property="FontSize" Value="20px" />
+            <Style x:Key="h1" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
+                <Setter Property="FontSize" Value="32px" />
                 <Setter Property="FontFamily" Value="RobotoBold" />
                 <Setter Property="FontWeight" Value="Bold" />
-                <Setter Property="Foreground" Value="White" />
-                <Setter Property="Background" Value="LightSkyBlue" />
             </Style>
-
-            <Style x:Key="danger-btn" TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignRaisedLightButton}" >
-                <Setter Property="FontSize" Value="20px" />
+            <Style x:Key="h2" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
+                <Setter Property="FontSize" Value="24px" />
                 <Setter Property="FontFamily" Value="RobotoBold" />
                 <Setter Property="FontWeight" Value="Bold" />
-                <Setter Property="Background" Value="Red" />
-                <Setter Property="Foreground" Value="White" />
-                <Setter Property="BorderBrush" Value="Red" />
             </Style>
-
-            <Style x:Key="label" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
-                <Setter Property="FontSize" Value="20px" />
+            <Style x:Key="h3" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
+                <Setter Property="FontSize" Value="18.72px" />
+                <Setter Property="FontFamily" Value="RobotoBold" />
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+            <Style x:Key="h4" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
+                <Setter Property="FontSize" Value="16px" />
+                <Setter Property="FontFamily" Value="RobotoBold" />
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+            <Style x:Key="h5" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
+                <Setter Property="FontSize" Value="13.28px" />
+                <Setter Property="FontFamily" Value="RobotoBold" />
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+            <Style x:Key="h6" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
+                <Setter Property="FontSize" Value="10.72px" />
                 <Setter Property="FontFamily" Value="RobotoBold" />
                 <Setter Property="FontWeight" Value="Bold" />
             </Style>
 
             <Style x:Key="textblock" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource MaterialDesignTextBlock}" >
-                <Setter Property="FontSize" Value="20px" />
+                <Setter Property="Height" Value="20px" />
+                <Setter Property="FontSize" Value="12px" />
                 <Setter Property="FontFamily" Value="RobotoRegular" />
                 <Setter Property="FontWeight" Value="Normal" />
-                <Setter Property="Height" Value="30px" />
                 <Setter Property="TextWrapping" Value="NoWrap" />
+            </Style>
+
+            <Style x:Key="label" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
+                <Setter Property="Height" Value="20px" />
+                <Setter Property="FontSize" Value="12px" />
+                <Setter Property="FontFamily" Value="RobotoRegular" />
+                <Setter Property="FontWeight" Value="Normal" />
+            </Style>
+
+            <Style x:Key="link" TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}" >
+                <Setter Property="Height" Value="20px" />
+                <Setter Property="FontSize" Value="12px" />
+                <Setter Property="FontFamily" Value="RobotoRegular" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="Foreground" Value="#007acc" />
             </Style>
 
             <Style x:Key="textbox" TargetType="{x:Type TextBox}" BasedOn="{StaticResource MaterialDesignTextBox}" >
@@ -64,6 +89,33 @@
                 <Setter Property="Width" Value="100px" />
             </Style>
 
+            <Style x:Key="nav-btn" TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignRaisedLightButton}" >
+                <Setter Property="Margin" Value="0px 0px 3px 0px" />
+                <Setter Property="FontSize" Value="20px" />
+                <Setter Property="FontFamily" Value="RobotoBold" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="Background" Value="LightSkyBlue" />
+                <Setter Property="BorderBrush" Value="LightSkyBlue" />
+            </Style>
+
+            <Style x:Key="primary-btn" TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignRaisedLightButton}" >
+                <Setter Property="FontSize" Value="20px" />
+                <Setter Property="FontFamily" Value="RobotoBold" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="Background" Value="LightSkyBlue" />
+                <Setter Property="BorderBrush" Value="LightSkyBlue" />
+            </Style>
+
+            <Style x:Key="danger-btn" TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignRaisedLightButton}" >
+                <Setter Property="FontSize" Value="20px" />
+                <Setter Property="FontFamily" Value="RobotoBold" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Background" Value="Red" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="BorderBrush" Value="Red" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
