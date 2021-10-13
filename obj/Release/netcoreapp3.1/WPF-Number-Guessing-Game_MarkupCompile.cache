@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\App.xaml
-2-1240746366
+6173598191
 
-51183491852
+12-306921157
 1941492463181
-MainWindow.xaml;Views\Index.xaml;
+AboutWindow.xaml;MainWindow.xaml;Views\AboutWindowPages\Index.xaml;Views\Game.xaml;Views\Index.xaml;Views\Options.xaml;
 
 False
 

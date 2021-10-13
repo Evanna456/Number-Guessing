@@ -10,8 +10,12 @@ D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\bin\Debug\netc
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\bin\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.pdb
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\AboutWindow.baml
+D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\MainWindow.baml
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\Views\AboutWindowPages\Index.baml
+D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\Views\Game.baml
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\Views\Index.baml
+D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\Views\Options.baml
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\AboutWindow.g.cs
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\Views\AboutWindowPages\Index.g.cs
@@ -22,10 +26,6 @@ D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netc
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game_MarkupCompile.cache
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game_MarkupCompile.lref
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\App.baml
-D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\AboutWindow.baml
-D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\MainWindow.baml
-D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\Views\Game.baml
-D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\Views\Options.baml
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.g.resources
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.GeneratedMSBuildEditorConfig.editorconfig
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.AssemblyInfoInputs.cache
@@ -34,4 +34,3 @@ D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netc
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.dll
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.pdb
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.genruntimeconfig.cache
-D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.csproj.CopyComplete

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
+using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using WPF_Number_Guessing_Game.Configs;
 
 namespace WPF_Number_Guessing_Game.Views
 {
@@ -18,18 +14,35 @@ namespace WPF_Number_Guessing_Game.Views
     /// </summary>
     public partial class Game : Page
     {
-        Helpers.Validation myValidation = new Helpers.Validation();
+        private Helpers.Validation myValidation = new Helpers.Validation();
+        private Configs.Directories myDirectories = new Configs.Directories();
+        private Configs.Game myGame = new Configs.Game();
+        private Configs.GameConfigJSON GameConfigJSON = new Configs.GameConfigJSON();
+        private int number;
+        private int min_range;
+        private int max_range;
+        private int no_chances;
+        private int history_no_chances;
+
         public Game()
         {
             InitializeComponent();
         }
 
-        int chances = 7;
-        int number;
+        private void navigateToHome(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("Views/Index.xaml", UriKind.Relative));
+        }
+
+        private void showAboutWindow(object sender, RoutedEventArgs e)
+        {
+            AboutWindow myAboutWindow = new AboutWindow();
+            myAboutWindow.Show();
+        }
 
         private void load(object sender, RoutedEventArgs e)
         {
-            generateRandomNumber();
+            gameConfigLoad();
         }
 
         private void submitBtnClick(object sender, RoutedEventArgs e)
@@ -37,37 +50,32 @@ namespace WPF_Number_Guessing_Game.Views
             SubmitBtn.IsEnabled = false;
             string string_answer = GuessedNumber.Text;
 
-            string result = myValidation.validate(string_answer, "number", 1, 99, "answer");
-
-            if (result == "valid")
+            if (myValidation.validate(string_answer, "number", min_range, max_range, "answer") == "valid")
             {
-
                 int int_answer = (int)Int32.Parse(string_answer);
-                int string_answer_length = string_answer.Length;
-                string first_digit_answer = string_answer.Substring(0, 1);
 
-                if (int_answer == number && chances != 0)
+                if (int_answer == number && no_chances != 0)
                 {
                     SubmitBtn.IsEnabled = false;
                     GuessedNumber.Text = "";
                     MessageBox.Show("You won", "Success");
                 }
-                else if (int_answer > number && chances != 0)
+                else if (int_answer > number && no_chances != 0)
                 {
                     SubmitBtn.IsEnabled = true;
                     MessageBox.Show("Wrong, the correct number is lower", "Error");
-                    chances = chances - 1;
-                    ChancesLabel.Content = "You have " + chances + " chance left";
+                    no_chances = no_chances - 1;
+                    ChancesLabel.Content = "You have " + no_chances + " chance left";
                     GuessedNumber.Text = "";
                     checkChances();
                 }
-                else if (int_answer < number && chances != 0)
+                else if (int_answer < number && no_chances != 0)
                 {
                     SubmitBtn.IsEnabled = true;
                     InformationTxtBlock.Foreground = Brushes.DarkRed;
                     MessageBox.Show("Wrong, the correct number is higher", "Error");
-                    chances = chances - 1;
-                    ChancesLabel.Content = "You have " + chances + " chance left";
+                    no_chances = no_chances - 1;
+                    ChancesLabel.Content = "You have " + no_chances + " chance left";
                     GuessedNumber.Text = "";
                     checkChances();
                 }
@@ -76,41 +84,55 @@ namespace WPF_Number_Guessing_Game.Views
             {
                 SubmitBtn.IsEnabled = true;
                 GuessedNumber.Text = "";
-                MessageBox.Show(result, "Error");
+                MessageBox.Show(myValidation.validate(string_answer, "number", min_range, max_range, "answer"), "Error");
             }
         }
 
         private void resetBtnClick(object sender, RoutedEventArgs e)
         {
-            generateRandomNumber();
-            chances = 7;
+            generateRandomNumber(min_range, max_range);
+            no_chances = history_no_chances;
             GuessedNumber.Text = "";
-            ChancesLabel.Content = "You have " + chances + " chance left";
+            ChancesLabel.Content = "You have " + no_chances + " chance left";
             SubmitBtn.IsEnabled = true;
         }
 
-        private void aboutBtnClick(object sender, RoutedEventArgs e)
+        public void gameConfigLoad()
         {
-            MessageBox.Show("Number Guessing Game 1.0" + '\n' + "Author: Evanna" + '\n' + "Inspired by: (GBA)Megaman Battle Network 1 Mini Game", "About");
+            myGame.gameConfigCreate();
+            string base_directory = myDirectories.base_directory;
+
+            string data = File.ReadAllText(base_directory + "/Configs/game.json");
+            GameConfigJSON json = JsonSerializer.Deserialize<GameConfigJSON>(data);
+            min_range = json.min_range;
+            max_range = json.max_range;
+            no_chances = json.no_chances;
+            history_no_chances = json.no_chances;
+
+            RangeLabel.Content = "Guess the Number from" + min_range.ToString() + " to " + max_range.ToString();
+            ChancesLabel.Content = "You have " + no_chances.ToString() + " chance left";
+
+            generateRandomNumber(min_range, max_range);
         }
 
-        private void generateRandomNumber()
+        public void generateRandomNumber(int min_range, int max_range)
         {
             Random rnd = new Random();
-            number = rnd.Next(1, 99);
-            ChancesLabel.Content = "You have " + chances + " chance left";
+            number = rnd.Next(min_range, max_range);
             GuessedNumber.Text = "";
-            string string_number = number.ToString();
             SubmitBtn.IsEnabled = true;
         }
-        private void checkChances()
+
+        public void checkChances()
         {
-            if (chances == 0)
+            if (no_chances == 0)
             {
                 MessageBox.Show("Gameover", "Error");
                 SubmitBtn.IsEnabled = false;
-                ChancesLabel.Content = "You have " + chances + " chance left";
+                ChancesLabel.Content = "You have " + no_chances + " chance left";
             }
         }
+
+        //END
     }
 }

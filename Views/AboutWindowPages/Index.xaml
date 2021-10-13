@@ -18,13 +18,14 @@
                     <RowDefinition Height="40px" />
                     <RowDefinition Height="25px" />
                     <RowDefinition Height="25px" />
+                    <RowDefinition Height="25px" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
                 <Label Name="BrandName" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource h3}" Grid.Column="0" Grid.Row="0">Number Guessing Game</Label>
                 <Label Name="Version"  HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource label}" Grid.Column="0" Grid.Row="1">Version: 1.0</Label>
                 <Label Name="GithubLink" MouseLeftButtonDown="openGithubLink" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource link}" Grid.Column="0" Grid.Row="2">View on Github</Label>
-
+                <Label Name="Inspired" FontSize="12px"  HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource label}" Grid.Column="0" Grid.Row="3">Inspired by: Megaman Battle Network 1: Puzzle</Label>
             </Grid>
         </Border>
     </DockPanel>

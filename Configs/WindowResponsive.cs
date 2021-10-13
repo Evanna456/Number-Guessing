@@ -9,13 +9,12 @@ namespace WPF_Number_Guessing_Game.Configs
     {
         public double width { get; set; }
         public double height { get; set; }
-        public double top { get; set; }
-        public double left { get; set; }
         public string window_state { get; set; }
     }
-    class WindowResponsive
+
+    public class WindowResponsive
     {
-        Configs.Directories myDirectories = new Configs.Directories();
+        private Configs.Directories myDirectories = new Configs.Directories();
 
         public void windowConfigCreate()
         {
@@ -26,7 +25,6 @@ namespace WPF_Number_Guessing_Game.Configs
 
             if (File.Exists(file_path) == false)
             {
-
                 WindowConfigJSON config = new WindowConfigJSON();
                 config = new WindowConfigJSON
                 {
@@ -37,10 +35,9 @@ namespace WPF_Number_Guessing_Game.Configs
 
                 string json_string = JsonSerializer.Serialize(config);
                 File.WriteAllText(base_directory + "/Configs/window.json", json_string);
-
             }
-
         }
+
         public void windowConfigLoad()
         {
             string base_directory = myDirectories.base_directory;
@@ -61,17 +58,14 @@ namespace WPF_Number_Guessing_Game.Configs
             }
             else if (window_state == "Maximized")
             {
-
                 Application.Current.MainWindow.WindowState = WindowState.Maximized;
-
             }
             else if (window_state == "Minimized")
             {
                 Application.Current.MainWindow.WindowState = WindowState.Normal;
             }
-
-
         }
+
         public void windowConfigUpdate()
         {
             string base_directory = myDirectories.base_directory;
@@ -88,7 +82,6 @@ namespace WPF_Number_Guessing_Game.Configs
             }
             else
             {
-
                 WindowConfigJSON config = new WindowConfigJSON();
                 config = new WindowConfigJSON
                 {
@@ -99,9 +92,7 @@ namespace WPF_Number_Guessing_Game.Configs
 
                 string jsonString = JsonSerializer.Serialize(config);
                 File.WriteAllText(base_directory + "/Configs/window.json", jsonString);
-
             }
-
         }
     }
 }

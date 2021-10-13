@@ -33,7 +33,7 @@
 
                 <Image Name="BrandLogo" Width="auto" Source="/Public/Images/logo.png" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" />
                 <Label Name="BrandName" Height="200px" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource h2}" Grid.Column="1" Grid.Row="2">Number Guessing Game</Label>
-                <Button Name="PlayBtn" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="3" Style="{StaticResource primary-btn}" >Play</Button>
+                <Button Name="PlayBtn" Click="navigateToGame" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="3" Style="{StaticResource primary-btn}" >Play</Button>
                 <Button Name="OptionsBtn" Click="navigateToOptions" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="4" Style="{StaticResource primary-btn}" >Options</Button>
             </Grid>
         </Border>

@@ -16,7 +16,6 @@ namespace WPF_Number_Guessing_Game.Views.AboutWindowPages
 
         private void openGithubLink(object sender, RoutedEventArgs e)
         {
-
             System.Diagnostics.Process.Start(new ProcessStartInfo
             {
                 FileName = "https://github.com/Evanna456/WPF-Number-Guessing-Game",
