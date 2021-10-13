@@ -34,3 +34,4 @@ D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netc
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.dll
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.pdb
 D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.genruntimeconfig.cache
+D:\My Documents\Workshop\WPF\[1]Projects\WPF-Number-Guessing-Game\obj\Debug\netcoreapp3.1\WPF-Number-Guessing-Game.csproj.CopyComplete

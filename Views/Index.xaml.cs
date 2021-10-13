@@ -34,5 +34,7 @@ namespace WPF_Number_Guessing_Game.Views
             AboutWindow myAboutWindow = new AboutWindow();
             myAboutWindow.Show();
         }
+
+        //END
     }
 }

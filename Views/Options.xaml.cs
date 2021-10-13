@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -93,7 +94,7 @@ namespace WPF_Number_Guessing_Game.Views
             int int_min_range = Int32.Parse(string_min_range);
             int int_max_range = Int32.Parse(string_max_range);
 
-            int range = int_max_range - int_min_range;
+            int range = int_max_range - int_min_range + 1;
             string string_range = range.ToString();
 
             int string_range_length = string_range.Length;
@@ -132,11 +133,9 @@ namespace WPF_Number_Guessing_Game.Views
                 }
                 else if (range > 100)
                 {
-                    int total_chances = 3 + int_first_digit;
-                    for (int it = 0; it < string_range_length; it++)
-                    {
-                        total_chances = total_chances + Int32.Parse(string_range[it].ToString());
-                    }
+                    int total_chances = 8 + string_range_length;
+
+                    Trace.WriteLine(string_range);
 
                     no_chances = total_chances.ToString();
                     saveOption = true;

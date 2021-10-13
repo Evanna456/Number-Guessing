@@ -7,8 +7,8 @@
       d:DesignHeight="640" d:DesignWidth="640" MinHeight="640px" MinWidth="640px"
       Title="Game" Loaded="load">
 
-    <DockPanel DockPanel.Dock="Top" Style="{StaticResource MyDockPanel}">
-        <Border DockPanel.Dock="Top" Height="35px" Style="{StaticResource MyTopBorder}">
+    <DockPanel DockPanel.Dock="Top">
+        <Border DockPanel.Dock="Top" Style="{StaticResource MyTopBorder}">
             <StackPanel x:Name="Navbar" Orientation="Horizontal">
                 <Button Name="HomeBtn" Click="navigateToHome" Style="{StaticResource nav-btn}">Home</Button>
                 <Button Name="AboutBtn" Click="showAboutWindow" Style="{StaticResource nav-btn}">About</Button>
@@ -23,19 +23,18 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
                     <RowDefinition Height="100px" />
                     <RowDefinition Height="70px" />
-                    <RowDefinition Height="100px" />
                     <RowDefinition Height="100px" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
                 <Label Name="RangeLabel" Width="auto" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource label}" Grid.Column="1" Grid.Row="1"></Label>
-
                 <Label Name="ChancesLabel" Height="30" Width="auto" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource label}" Grid.Column="1" Grid.Row="1">You have 7 chance left</Label>
                 <TextBox Name="GuessedNumber" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource textbox}" Grid.Column="1" Grid.Row="2" />
                 <Button Name="SubmitBtn" Click="submitBtnClick" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Style="{StaticResource primary-btn}" IsEnabled="False" Margin="71,0,0,0">Submit</Button>
-                <Button Name="ResetBtn" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Style="{StaticResource danger-btn}" Margin="0,0,86,0">Reset</Button>
+                <Button Name="ResetBtn" Click="resetBtnClick" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Style="{StaticResource danger-btn}" Margin="0,0,86,0">Reset</Button>
                 <TextBlock Name="InformationTxtBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="3" Style="{StaticResource textblock}"></TextBlock>
             </Grid>
         </Border>

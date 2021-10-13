@@ -22,5 +22,7 @@ namespace WPF_Number_Guessing_Game.Views.AboutWindowPages
                 UseShellExecute = true
             });
         }
+
+        //END
     }
 }

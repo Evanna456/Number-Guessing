@@ -109,7 +109,7 @@ namespace WPF_Number_Guessing_Game.Views
             no_chances = json.no_chances;
             history_no_chances = json.no_chances;
 
-            RangeLabel.Content = "Guess the Number from" + min_range.ToString() + " to " + max_range.ToString();
+            RangeLabel.Content = "Guess the Number from " + min_range.ToString() + " to " + max_range.ToString();
             ChancesLabel.Content = "You have " + no_chances.ToString() + " chance left";
 
             generateRandomNumber(min_range, max_range);
@@ -127,7 +127,7 @@ namespace WPF_Number_Guessing_Game.Views
         {
             if (no_chances == 0)
             {
-                MessageBox.Show("Gameover", "Error");
+                MessageBox.Show("Gameover the answer is "+ number, "Error");
                 SubmitBtn.IsEnabled = false;
                 ChancesLabel.Content = "You have " + no_chances + " chance left";
             }
