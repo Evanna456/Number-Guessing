@@ -56,10 +56,8 @@ namespace WPF_Number_Guessing_Game.Views
             SaveOptionsBtn.IsEnabled = false;
             myGameConfigs.gameConfigCreate();
 
-            string string_min_range = MinRangeTextbox.Text;
-            string string_max_range = MaxRangeTextbox.Text;
-            int int_min_range = Int32.Parse(string_min_range);
-            int int_max_range = Int32.Parse(string_max_range);
+            var string_min_range = MinRangeTextbox.Text;
+            var string_max_range = MaxRangeTextbox.Text;
 
             if (myValidation.validate(string_min_range, "number", 0, 2147483647, "Minimum Range") != "valid")
             {
@@ -75,6 +73,10 @@ namespace WPF_Number_Guessing_Game.Views
             }
             else
             {
+
+                var int_min_range = Int32.Parse(string_min_range);
+                var int_max_range = Int32.Parse(string_max_range);
+
                 if (int_min_range < int_max_range)
                 {
                     calculateChances(string_min_range, string_max_range);

@@ -48,7 +48,7 @@ namespace WPF_Number_Guessing_Game.Views
         private void submitBtnClick(object sender, RoutedEventArgs e)
         {
             SubmitBtn.IsEnabled = false;
-            string string_answer = GuessedNumber.Text;
+            var string_answer = GuessedNumber.Text;
 
             if (myValidation.validate(string_answer, "number", min_range, max_range, "answer") == "valid")
             {
