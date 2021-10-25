@@ -7,9 +7,9 @@ It's a game wherein you have to guess the number from a specified range.
 ## Usage
 
 * 1.)Download and Install [.NET Desktop Runtime 3.1](https://dotnet.microsoft.com/download/dotnet/3.1) if you haven't.
-* 2.)Download the App Latest [Release](https://mega.nz/file/o0JXFKJR#QIbLBfWEBk5f7fku8fV3DOYHYYQZUU72bY04l333iGo)
-* 3.)Unzip then Open Application Folder
-* 4.)Open WPF-Number-Guessing-Game executable. Play the Game
+* 2.)Download the App Latest [Release](https://mega.nz/file/o0JXFKJR#QIbLBfWEBk5f7fku8fV3DOYHYYQZUU72bY04l333iGo).
+* 3.)Unzip then Open Application Folder.
+* 4.)Open WPF-Number-Guessing-Game executable. Play the Game.
 
 ## About WPF
 
