@@ -6,8 +6,8 @@ It's a game wherein you have to guess the number from a specified range.
 
 ## Usage
 
-*1.)Open Application Folder
-*2.)Open WPF-Number-Guessing-Game executable. Play the Game
+* 1.)Open Application Folder
+* 2.)Open WPF-Number-Guessing-Game executable. Play the Game
 
 ## About WPF
 
