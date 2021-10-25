@@ -1,6 +1,6 @@
 ## About WPF-Number-Guessing-Game
 
-<p align="center"><img src="https://i.imgur.com/F51qk7j.png" width="400px" height="auto" alt="Logo"></a></p>
+<p align="center"><img src="https://i.imgur.com/F51qk7j.png" width="100px" height="auto" alt="Logo"></a></p>
 
 It's a game wherein you have to guess the number from a specified range.
 
@@ -20,4 +20,3 @@ Windows Presentation Foundation (WPF) is a UI framework for building Windows des
 
 ## License
 
-<p align="left>[MIT](https://choosealicense.com/licenses/mit/)</p>
