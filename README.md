@@ -21,5 +21,3 @@ Windows Presentation Foundation (WPF) is a UI framework for building Windows des
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-5.0)
 
 ## License
-
-<p align="left>[MIT](https://choosealicense.com/licenses/mit/)</p>
