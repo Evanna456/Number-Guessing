@@ -21,4 +21,4 @@ Windows Presentation Foundation (WPF) is a UI framework for building Windows des
 
 ## License
 
-<p align="left>WPF-Number-Guessing-Game is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)</p>
+<p align="left>WPF-Number-Guessing-Game is licensed under the [MIT](https://choosealicense.com/licenses/mit/) </p>
