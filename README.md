@@ -15,7 +15,7 @@ It's a game wherein you have to guess the number from a specified range.
 
 Windows Presentation Foundation (WPF) is a UI framework for building Windows desktop applications. WPF supports a broad set of application development features, including an application model, resources, controls, graphics, layout, data binding and documents. WPF uses the Extensible Application Markup Language (XAML) to provide a declarative model for application programming.
 
-*[Github](https://github.com/dotnet/wpf)
-*[Documentation](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-5.0)
+* [Github](https://github.com/dotnet/wpf)
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-5.0)
 
 ## License
