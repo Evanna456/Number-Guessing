@@ -7,7 +7,7 @@ It's a game wherein you have to guess the number from a specified range.
 ## Usage
 
 * 1.)Download and Install [.NET Core Desktop Runtime 3.1](https://dotnet.microsoft.com/download/dotnet/3.1) if you haven't.
-* 2.)Run App.
+* 2.)Run the App.
 
 ## About WPF
 
