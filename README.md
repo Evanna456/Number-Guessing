@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://i.imgur.com/F51qk7j.png" width="150px" height="auto" alt="Logo"></a></p>
 
-It's a game wherein you have to guess the number from a specified range.
+It's a desktop game about guessing numbers in a specified range.
 
 ## Usage
 
