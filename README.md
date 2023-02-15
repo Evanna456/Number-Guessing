@@ -1,4 +1,4 @@
-## About WPF-Number-Guessing-Game
+## Number-Guessing
 
 <p align="center"><img src="https://i.imgur.com/F51qk7j.png" width="150px" height="auto" alt="Logo"></a></p>
 
@@ -9,7 +9,7 @@ It's a desktop game about guessing numbers in a specified range.
 * 1.)Download and Install [.NET Core Desktop Runtime 3.1](https://dotnet.microsoft.com/download/dotnet/3.1) if you haven't.
 * 2.)Run the App.
 
-## About WPF
+## WPF
 
 <p align="center"><img src="https://res.cloudinary.com/eternitech/images/f_auto,q_auto/v1619587929/eternitech/WPF-logo/WPF-logo.png" width="150px" height="auto" alt="Logo"></a></p>
 
@@ -20,5 +20,5 @@ Windows Presentation Foundation (WPF) is a UI framework for building Windows des
 
 ## License
 
-WPF-Number-Guessing-Game is licensed under [MIT](https://choosealicense.com/licenses/mit/)
+Number-Guessing is licensed under [MIT](https://choosealicense.com/licenses/mit/)
 
